@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#000000">
+<title>BABY CUDDLE TOUR — MOSCOW</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--black:#000;--white:#fff;--pink:#ff267b;--red:#ff1717;--gray:#999}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Oswald',sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+header{min-height:85px;padding:15px 6%;display:flex;align-items:center;justify-content:space-between;gap:20px;background:#000;border-bottom:1px solid #222;position:relative;z-index:10}
+.logo{font-family:'Permanent Marker',cursive;font-size:22px;line-height:.95;color:#fff;transform:rotate(-4deg);flex-shrink:0}
+.logo span{color:var(--pink)}
+.navigation{display:flex;align-items:center;gap:30px}
+.city{font-size:13px;letter-spacing:4px;color:var(--gray)}
+.social-link{display:flex;align-items:center;gap:9px;color:#fff;font-size:13px;letter-spacing:2px;transition:.25s}
+.social-link svg{width:24px;height:24px;fill:var(--pink);transition:.25s}
+.social-link:hover{color:var(--pink)}
+.social-link:hover svg{transform:translate(3px,-3px) rotate(-8deg);filter:drop-shadow(0 0 7px var(--pink))}
+.button{display:inline-block;padding:14px 25px;background:var(--pink);color:#000;font-family:'Oswald',sans-serif;font-size:14px;font-weight:700;letter-spacing:1px;text-align:center;border:none;transform:skew(-6deg);transition:.25s;cursor:pointer}
+.button:hover{background:#fff;box-shadow:0 0 30px #ff267b80;transform:skew(-6deg) translateY(-3px)}
+.hero{min-height:690px;position:relative;display:flex;align-items:center;padding:65px 7%;overflow:hidden;background:#000}
+.hero:before{content:"";position:absolute;width:500px;height:500px;right:8%;top:10%;border-radius:50%;background:var(--pink);opacity:.07;filter:blur(140px);pointer-events:none}
+.hero-text{position:relative;z-index:2;width:55%}
+.hero-label{color:var(--pink);font-size:12px;letter-spacing:6px;margin-bottom:25px}
+h1{font-size:clamp(65px,10vw,125px);font-weight:700;line-height:.84;letter-spacing:-3px}
+h1 .outline{color:transparent;-webkit-text-stroke:2px #fff}
+h1 .pink{color:var(--pink)}
+.hero-text .city{margin:30px 0;font-size:18px;letter-spacing:7px}
+.hero-actions{display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+.hero-image{position:absolute;right:0;top:0;width:58%;height:100%;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.hero-image img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;filter:contrast(1.08);animation:photoMove 5s ease-in-out infinite;-webkit-mask-image:linear-gradient(to right,transparent 0%,black 18%,black 100%);mask-image:linear-gradient(to right,transparent 0%,black 18%,black 100%)}
+@keyframes photoMove{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-12px) scale(1.025)}}
+.pink-line{height:3px;width:100%;background:var(--pink)}
+.tickets{min-height:350px;padding:85px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#000;border-bottom:1px solid #222}
+.tickets h2{font-size:clamp(48px,8vw,90px);line-height:.95;margin-bottom:35px}
+.tickets h2 span{color:var(--pink)}
+.ticket-caption{margin-top:22px;font-family:Arial,sans-serif;font-size:12px;color:#777}
+footer{padding:32px 6%;background:#000;display:flex;justify-content:space-between;align-items:center;gap:25px;border-top:1px solid #222}
+.company{color:var(--red);text-align:right;font-size:14px;font-weight:600;line-height:1.8}
+@media(max-width:700px){
+header{min-height:75px;padding:13px 5%;gap:10px}
+.logo{font-size:17px}
+.navigation{gap:10px}
+.navigation .city{display:none}
+.social-link{font-size:10px;letter-spacing:.5px;gap:5px}
+.social-link svg{width:20px;height:20px}
+header>.button{padding:10px 12px;font-size:11px;letter-spacing:0}
+.hero{min-height:auto;display:flex;flex-direction:column;align-items:stretch;padding:50px 6% 15px}
+.hero-text{width:100%}
+.hero-label{font-size:10px;letter-spacing:4px}
+h1{font-size:clamp(58px,15vw,95px);letter-spacing:-2px}
+.hero-text .city{margin:22px 0;font-size:14px;letter-spacing:5px}
+.hero-image{position:relative;right:auto;top:auto;width:115%;height:390px;margin:15px -7.5% 0}
+.hero-image img{-webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 12%,black 100%);mask-image:linear-gradient(to bottom,transparent 0%,black 12%,black 100%)}
+.tickets{min-height:290px;padding:65px 15px}
+footer{padding:28px 6%;flex-direction:column;align-items:flex-start;gap:25px}
+.company{text-align:left;font-size:12px}
+}
+@media(max-width:360px){
+.logo{font-size:14px}
+.social-link{font-size:9px}
+header>.button{padding:9px 8px;font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){
+*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<header>
+  <a href="#" class="logo">BABY<br><span>CUDDLE</span> TOUR</a>
+  <nav class="navigation">
+    <div class="city">МОСКВА</div>
+    <a href="https://t.me/BabyCuddle_1" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Открыть Telegram-канал Baby Cuddle">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.8 3.2 18.5 20c-.25 1.2-.9 1.5-1.8.95l-5-3.7-2.4 2.3c-.27.27-.5.5-1 .5l.36-5.1 9.3-8.4c.4-.36-.1-.56-.62-.2L5.8 13.6.9 12.05c-1.1-.35-1.1-1.1.23-1.6L20.3 2.9c.9-.34 1.7.2 1.5.3Z"/></svg>
+      СОЦСЕТИ
+    </a>
+  </nav>
+  <a href="https://moscow.qtickets.events/263283-baby-cuddle-1110" class="button" target="_blank" rel="noopener noreferrer">КУПИТЬ БИЛЕТ ↗</a>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-label">MOSCOW · 2026</div>
+      <h1>BABY<br><span class="outline">CUDDLE</span><br><span class="pink">TOUR.</span></h1>
+      <div class="city">МОСКВА / RUSSIA</div>
+      <div class="hero-actions">
+        <a href="https://moscow.qtickets.events/263283-baby-cuddle-1110" class="button" target="_blank" rel="noopener noreferrer">КУПИТЬ БИЛЕТ →</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://i.ibb.co/QGp4pK8/IMG-3559.png" alt="Baby Cuddle Tour">
+    </div>
+  </section>
+  <div class="pink-line"></div>
+  <section class="tickets" id="tickets">
+    <h2>МОСКВА<br><span>2026.</span></h2>
+    <a href="https://moscow.qtickets.events/263283-baby-cuddle-1110" target="_blank" rel="noopener noreferrer" class="button">КУПИТЬ БИЛЕТ ↗</a>
+    <div class="ticket-caption">Официальная страница покупки билетов</div>
+  </section>
+</main>
+<footer>
+  <a href="#" class="logo">BABY <span>CUDDLE</span> TOUR.</a>
+  <div class="company">ООО «Монолит»<br>Москва, Новоданиловская набережная, д. 4А</div>
+</footer>
+</body>
+</html>
